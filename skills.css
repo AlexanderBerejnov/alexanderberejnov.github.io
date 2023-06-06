@@ -78,7 +78,14 @@ a > span.exo2.extra-wide {
   width: 100%;
   background-color: rgba(63, 69, 76, 0.3);
 }
-.card .avatar_wrapper {
+.card .personal_information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card .personal_information .avatar_wrapper {
   position: relative;
   width: 200px;
   height: 200px;
@@ -87,44 +94,29 @@ a > span.exo2.extra-wide {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: rgb(75, 75, 72);
-  text-align: center;
 }
-.card .avatar_wrapper .avatar {
+.card .personal_information .avatar_wrapper .avatar {
   position: absolute;
   left: 0;
   top: 0;
   transform: scale(0.4) translate(-90%, -70%);
   background-color: rgb(75, 75, 72);
 }
-.card h1 {
+.card .personal_information h1 {
   font-size: 1.5rem;
-  margin-top: 0.875em;
+  margin-top: 0.725em;
 }
-.card h2 {
+.card .personal_information h2 {
   font-size: 1rem;
-  margin-bottom: 1em;
+  margin-bottom: 0.625em;
   font-style: italic;
 }
 .card p {
   font-size: 14px;
+  margin-bottom: 20px;
   line-height: 1.4;
   color: #CABFAB;
   text-align: center;
 }
 
-/*
- * For media query below, max-width is set to 539px,
- * because you can take a nice card-like picture with 540px;
- * this way it lets you take a picture with 540px but with
- * 539px it becomes smaller. lol
- */
-@media only screen and (max-width: 539px) {
-  .wrapper {
-    padding: 0;
-  }
-  .wrapper .card {
-    max-width: 100%;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=skills.css.map */

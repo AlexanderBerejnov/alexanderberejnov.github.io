@@ -1,0 +1,80 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, .wrapper {
+  height: 100%;
+}
+
+$dark_beige: #CABFAB;
+$light_beige: #DFD8C8;
+$dark_blue: #41444B;
+$light_blue: #52575D;
+$blue_link_color: #00A3FF;
+
+body {
+  //background-color: #41444B;
+  //background: linear-gradient(135deg, #3f454c 0%, #5facb0 50%, #51575e 100%);
+  background: #41444B linear-gradient(135deg, #3f454c 0%, #478083 50%, #51575e 100%);
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+  color: $light_beige;
+}
+
+// SOME MAIN STYLES
+span.exo2 {
+  font-family: 'Exo 2', sans-serif;
+}
+
+a {
+  color: $blue_link_color;
+  text-decoration: underline;
+  font-weight: 700;
+  cursor: pointer;
+
+  &.no-underline {
+    text-decoration: none;
+  }
+  & > span.exo2 {
+    font-family: 'exo 2', sans-serif;
+    letter-spacing: 0.2ch;
+  }
+  & > span.exo2.wide {
+    font-family: 'exo 2', sans-serif;
+    letter-spacing: 0.3ch;
+  }
+  & > span.exo2.extra-wide {
+    font-family: 'exo 2', sans-serif;
+    letter-spacing: 0.5ch;
+  }
+}
+// END OF MAIN STYLES
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  text-align: center;
+  min-height: 100%;
+  padding: 2em 0;
+}
+
+
+/*
+ * For media query below, max-width is set to 539px,
+ * because you can take a nice card-like picture with 540px;
+ * this way it lets you take a picture with 540px but with
+ * 539px it becomes smaller. lol
+ */
+@media only screen and (max-width: 539px) {
+  .wrapper {
+    padding: 0;
+
+    .card {
+      max-width: 100%;
+    }
+  }
+}

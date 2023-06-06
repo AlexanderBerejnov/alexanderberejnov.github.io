@@ -1,0 +1,70 @@
+@import "main";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100%;
+  padding: 50px 0;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+
+  // #1
+  //background-color: $light_blue;
+  //box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  // // Line below is for gray-cyan-gray from top left to top right
+  // background: #41444B linear-gradient(135deg, #3f454c 0%, #478083 50%, #51575e 100%);
+
+  // #2
+  background-color: rgba(63, 69, 76, 0.3);
+
+  .personal_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .avatar_wrapper {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border: 10px solid #9a9a9a;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      background-color: rgb(75, 75, 72);
+
+      .avatar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: scale(0.4) translate(-90%, -70%);
+        background-color: rgb(75, 75, 72);
+      }
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-top: 0.725em;
+    }
+
+    h2 {
+      font-size: 1rem;
+      margin-bottom: 0.625em;
+      font-style: italic;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: $dark_beige;
+    text-align: center;
+  }
+}
+

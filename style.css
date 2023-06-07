@@ -1,7 +1,13 @@
+@charset "UTF-8";
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+* {
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 html, body, .wrapper {
@@ -102,7 +108,7 @@ a > span.exo2.extra-wide {
 }
 .card h2 {
   font-size: 1rem;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   font-style: italic;
 }
 .card p {
@@ -111,20 +117,35 @@ a > span.exo2.extra-wide {
   color: #CABFAB;
   text-align: center;
 }
-
-/*
- * For media query below, max-width is set to 539px,
- * because you can take a nice card-like picture with 540px;
- * this way it lets you take a picture with 540px but with
- * 539px it becomes smaller. lol
- */
-@media only screen and (max-width: 539px) {
-  .wrapper {
-    padding: 0;
-  }
-  .wrapper .card {
-    max-width: 100%;
-  }
+.card a {
+  margin-top: 3em;
+}
+.card .blockquote {
+  position: relative;
+  max-width: 80%;
+  margin: 0.625em 1.875em;
+  padding: 1em 4em;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #CABFAB;
+  border-radius: 6px;
+  border: 1px solid #52575D;
+}
+.card .blockquote::before {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  content: "“";
+  font-size: 3.25em;
+  color: #244850;
+}
+.card .blockquote::after {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  content: "“";
+  font-size: 3.25em;
+  color: #244850;
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=style.css.map */

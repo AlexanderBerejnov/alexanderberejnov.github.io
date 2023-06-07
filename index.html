@@ -31,8 +31,20 @@
         <h1>Alexander Berejnov</h1>
         <h2>Moscow, Russia</h2>
         <p>Coding is my hobby</p>
+        <blockquote class="blockquote">
+            <p class="blockquote__text">
+                I know words. I have the best words.
+            </p>
+        </blockquote>
         <a class="no-underline" href="/skills"><span class="exo2">MY SKILLS</span></a>
     </div>
 </div>
+
+<script>
+    const img = document.querySelector('img');
+    img.addEventListener('contextmenu', (event) => {
+        event.preventDefault();
+    });
+</script>
 </body>
 </html>

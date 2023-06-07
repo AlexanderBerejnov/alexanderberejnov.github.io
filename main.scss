@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+* {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 html, body, .wrapper {
   height: 100%;
 }
@@ -13,6 +18,7 @@ $light_beige: #DFD8C8;
 $dark_blue: #41444B;
 $light_blue: #52575D;
 $blue_link_color: #00A3FF;
+$blockquote_quote_color: #244850;
 
 body {
   //background-color: #41444B;
